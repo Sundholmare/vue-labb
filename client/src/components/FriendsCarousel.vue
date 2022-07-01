@@ -21,11 +21,14 @@ export default {
 
 <template>
   <div class="hero">
-    <h1>Hello Friends</h1>
-    <div v-for="(friend, index) in friends" :key="index">
-        <FriendItem :friend="friend" />
+    <h1 class="title">Friends</h1>
+    <div class="friends">
+      <FriendItem
+        v-for="(friend, index) in friends"
+        :key="index"
+        :friend="friend"
+      />
     </div>
-    <!-- <FriendItem v-bind:friend="friends[0]" /> -->
   </div>
 </template>
 
@@ -40,5 +43,18 @@ export default {
   align-items: center;
   border-radius: 15px;
   box-shadow: 18px 16px 25px 10px #ccc;
+}
+
+.title{
+  font-size: 44px;
+  color: white;
+  font-style: italic;
+}
+
+.friends {
+  display: flex;
+  flex-direction: row;
+  max-width: 32rem;
+  overflow-x: scroll;
 }
 </style>
