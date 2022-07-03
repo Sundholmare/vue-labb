@@ -16,10 +16,12 @@ export default {
         {
           h1: "Laboratory for the purpose of learning and familiarising of Vue.js",
           p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium officia, neque voluptatibus quod nulla alias quia nobis eveniet! Natus ducimus sit accusamus provident ab facere ipsa nulla tenetur eligendi explicabo? Nobis praesentium odit ipsa deserunt, quas ducimus nam Accusantium error perspiciatis tempore expedita voluptatum sunt quia, earum quasi et voluptate laborum tempora. Molestias inventore eius tenetur sed ipsam hic iure.",
+          positionLeft: true
         },
         {
           h1: "Check out these sweet components",
           p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium officia, neque voluptatibus quod nulla alias quia nobis eveniet! Natus ducimus sit accusamus provident ab facere ipsa nulla tenetur eligendi explicabo? Nobis praesentium odit ipsa deserunt, quas ducimus nam Accusantium error perspiciatis tempore expedita voluptatum sunt quia, earum quasi et voluptate laborum tempora. Molestias inventore eius tenetur sed ipsam hic iure.",
+          positionLeft: false
         },
       ],
     };
@@ -38,7 +40,13 @@ export default {
 
 
 <style>
+
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .main {
+  background: #fff;
   display: flex;
   width: 100vw;
   flex-direction: column;

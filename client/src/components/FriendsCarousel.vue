@@ -34,7 +34,8 @@ export default {
 
 <style>
 .hero {
-  background: teal;
+  padding: 10px;
+  background: #42b883;
   width: 50%;
   height: 40rem;
   display: flex;

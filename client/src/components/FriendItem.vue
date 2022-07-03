@@ -33,10 +33,11 @@ export default {
   min-width: 10rem;
   margin: 5px;
   text-align: center;
+  color: darkslategray;
 }
 
 .friend-btn {
-  background: teal;
+  background: #42b883;
   padding: 10px;
   border-radius: 4px;
   border-style: none;
